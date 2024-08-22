@@ -1,0 +1,29 @@
+#danhsach,
+#danhsach thead,
+#danhsach tbody,
+#danhsach td,
+#danhsach th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#danhsach .sua {
+    background-color: rgb(13, 106, 237);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#danhsach .xoa {
+    background-color: rgb(235, 93, 93);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.table-pagination .flex {
+    justify-content: center;
+}
+
+.control.icons-left .input,
+.control.icons-left .select select {
+    padding-left: 10px;
+}

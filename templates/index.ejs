@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include(`partials/head.ejs`) %>
+    <style>
+      body{
+        padding: 0;
+        margin: 0;
+      }
+      .gameItem {
+        border: 3px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 5px 10px 10px #e8f5ee;
+        height: 100px;
+        flex: 0 0 20%;
+        width: 100%;
+      }
+
+      .unmatched {
+        background-color: red;
+      }
+
+    .img-fluid{
+    height: 100px;
+    }
+
+    #app{
+   margin: auto;
+   padding-left: 60px;
+   }
+   #board{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .container1{
+    width: 100vw;
+    height: 100vh;
+    margin:auto;
+    padding:50px;
+    background-image: url('images/banner.png') ;
+    background-size: 100% 100%;
+   }
+   .row{
+    justify-content: center;
+   }
+    </style>
+  </head>
+
+  <body>
+    <main class="container1" >
+      <header ><%- include(`partials/header.ejs`) %></header>
+
+      <div id="app">
+        <section  id="board">
+          
+          <!-- <div class="col-2 gameItem m-2 p1 text-center">
+                    <img src="" alt="" class="img-fluid">
+                </div> -->
+        
+        </section>
+        <section >
+          <div class="col" id="reset">
+            <br>
+            <button id="reset" class="btn btn-primary">Reset Game</button>
+            <button id="cancel" class="btn btn-danger"><a class="text-white text-decoration-none" href="login">Cancel</a></button>
+          </div>
+        </section>
+   
+      </div>
+  
+
+      <!-- <footer class="row"><%- include(`partials/footer.ejs`) %></footer> -->
+    </main>
+    <script src="assets/main.bundle.js"></script>
+    <script src="assets/vendors-node_modules_autobind-decorator_lib_esm_index_js-node_modules_class-validator_esm5_de-157a7d.bundle.js"></script>
+    <script src="assets/vendors-node_modules_autobind-decorator_lib_esm_index_js-node_modules_lodash_lodash_js.bundle.js"></script>
+    <%- include(`partials/foot.ejs`) %>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <%- include(`partials/head.ejs`) %>
+  </head>
+  <style>
+    body{
+        background-image: url('/images/pokemon.png');
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        padding: 110px;
+
+    }
+    .background{
+        border-style:solid;
+        background-color:aliceblue 0,5;
+        border-radius: 10px;
+        width:40%;
+        padding: 40px;
+        backdrop-filter: blur(20px);
+        color: aliceblue;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 5px 10px 10px #fff;
+    }
+  </style>
+
+  <body >
+    <div class="background mx-auto" >
+        <main class="container">
+        <header class="row"><%- include(`partials/header.ejs`) %></header>
+
+        <section class="row " id="app" >
+          <div class="col">
+            <form action="board">
+              <div class="form-group">
+                <label for="username">Username:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="username"
+                  id="username"
+                  aria-describedby="UsernameHelpId"
+                  placeholder="Username"
+                />
+                <small
+                  id="UsernameHelpId"
+                  class="form-text text-muted invisible"
+                >
+                  Username không được bỏ trống hoặc ít hơn 3 ký tự
+                </small>
+              </div>
+
+              <div class="form-group mx-auto">
+                <button
+                  class="btn btn-success col-5 "
+                  style="margin-left: 110px;"
+                  type="button "
+                  id="play"
+                  name="">
+                  Play Game
+                </button>
+              </div>
+            </form>
+        </section>
+        <!-- <footer class="row"><%- include(`partials/footer.ejs`) %></footer> -->
+      </main>
+      <script src="assets/user.bundle.js"></script>
+      <script src="assets/vendors-node_modules_autobind-decorator_lib_esm_index_js-node_modules_class-validator_esm5_de-157a7d.bundle.js"></script>
+      <%- include(`partials/foot.ejs`) %>
+    </div>
+  </body>
+</html>

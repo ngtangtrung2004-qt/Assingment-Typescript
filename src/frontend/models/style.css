@@ -1,0 +1,14 @@
+.gameItem {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px #e8f5ee;
+    height: 100px;
+}
+
+.unmatched {
+    background-color: red;
+}
+.img-fluid{
+    height: 100px;
+}
+   
